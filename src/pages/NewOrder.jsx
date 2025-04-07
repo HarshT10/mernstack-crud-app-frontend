@@ -145,16 +145,6 @@ const NewOrder = () => {
                 <option value="Screen">Screen</option>
               </select>
             </div>
-            {/* <div>
-              <label className="block font-bold mb-1">Rate</label>
-              <input
-                type="text"
-                name="rate"
-                value={formData.rate}
-                onChange={handleChange}
-                className="w-full border p-2 rounded"
-              />
-            </div> */}
           </div>
         </div>
 
