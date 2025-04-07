@@ -1,0 +1,191 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  flex-grow: 0 !important;
+}
+
+p,
+h4 {
+  margin: 0 !important;
+}
+
+.navbar-brand {
+  padding: 0 !important;
+}
+
+.nav-link,
+.search {
+  visibility: visible;
+}
+
+.row-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.value {
+  font-size: 18px;
+}
+
+.bottom {
+  margin-top: 7rem;
+}
+
+.status {
+  width: 100%;
+  padding: 0.3rem 0 !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.status-pending {
+  background-color: #ffa500;
+}
+.status-completed {
+  background-color: #28a745;
+}
+
+.row-link {
+  color: #000000;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.new-job-card-title,
+.new-company-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.search-results-title {
+  margin-bottom: 1.5rem !important;
+}
+
+pre {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.print-logo {
+  display: none !important;
+}
+
+.line {
+  display: none !important;
+}
+
+input,
+textarea,
+select {
+  background: white !important;
+}
+
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin: 0 40px;
+  }
+
+  body {
+    font-size: 12px;
+    color: black;
+    background: none;
+  }
+
+  header,
+  button,
+  .status,
+  .rate {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .print-text {
+    margin-top: 1rem !important;
+    display: flex !important;
+    flex-direction: row;
+  }
+
+  .jq-size,
+  .ink-punching,
+  .numbering-fc,
+  .perf-lam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mb-5,
+  .mb-3,
+  .mt-4 {
+    margin: 0 !important;
+  }
+
+  li,
+  strong {
+    font-size: 14px !important;
+  }
+
+  .job-number,
+  .job-number > strong {
+    font-size: 16px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  .print-logo {
+    visibility: visible !important;
+    display: block !important;
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .line {
+    display: block !important;
+  }
+
+  .order-details {
+    padding: 0 !important;
+  }
+
+  .text-area {
+    gap: 0 !important;
+  }
+}
